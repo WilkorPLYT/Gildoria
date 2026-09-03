@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⛏ CraftMC — Strona + Sklep serwera Minecraft
+# ⛏ Gildoria — Strona + Sklep serwera Minecraft
 
 [![Next.js](https://img.shields.io/badge/Next.js-15-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
@@ -9,22 +9,19 @@
 [![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)](https://www.sqlite.org/)
 
 [![Status](https://img.shields.io/badge/Status-Aktywne-brightgreen?style=for-the-badge)](#)
-[![fly.io](https://img.shields.io/badge/Hosted%20on-fly.io-2410F0?style=for-the-badge&logo=flydotio&logoColor=white)](#-wdrożenie-flyio)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](#-licencja)
 
 <br>
 
-### 🌐 Kompletna strona serwera Minecraft: sklep, czat na żywo, statystyki, eventy, LiveHelp i gotowe wejścia pod plugin oraz bota Discord
+### 🌐 Kompletna strona serwera Minecraft: sklep, czat na żywo, statystyki, eventy, pomoc i automatyczne dostarczanie zakupów
 
-Strona + sklep z prawdziwym procesem płatności, danymi z serwera w czasie rzeczywistym i wykrywaniem streamów.
+Strona z prawdziwym procesem płatności i danymi z serwera w czasie rzeczywistym.
 **Klimat klasycznej strony serwera MC** — bez „AI landing page": kanciaste panele, pikselowe fonty, zero gradientów.
 
 <br>
 
 [📸 Screenshots](#-screenshots) •
 [🛠️ Technologie](#️-technologie) •
-[🚀 Uruchomienie](#-uruchomienie) •
-[☁️ Wdrożenie](#-wdrożenie-flyio) •
 [🔌 Integracje](#-integracje) •
 [📞 Kontakt](#-kontakt)
 
@@ -36,28 +33,27 @@ Strona + sklep z prawdziwym procesem płatności, danymi z serwera w czasie rzec
 
 <br>
 
-## 🌐 Strona
+## 🌐 Co potrafi
 
 ### 🏠 Strona główna
 
 Wszystko, co gracz musi zobaczyć w 3 sekundy: adres serwera, licznik graczy i droga do sklepu.
 
 - ✅ **Karta serwera jak z listy w grze** — ikona bloku, MOTD, gracze online, pasek „siły sygnału"; kliknięcie kopiuje IP
-- ✅ **Licznik graczy na żywo** — aktualizowany strumieniem (SSE), z paskiem zapełnienia serwera
-- ✅ **Czat z serwera na żywo** — scrolluje się sam, rozróżnia wejścia/wyjścia/śmierci/osiągnięcia, maskuje wulgaryzmy
+- ✅ **Licznik graczy na żywo** — aktualizowany bez przeładowania strony
+- ✅ **Czat z serwera na żywo** — sam się przewija, rozróżnia wejścia/wyjścia/zgony/osiągnięcia, maskuje wulgaryzmy
 - ✅ **Feed „ostatnie zakupy"** — nicki **zamaskowane serwerowo** (`KacperGracz` → `Ka********z`)
-- ✅ **Top graczy, eventy, ogłoszenia** — od razu na pierwszej stronie
+- ✅ **Top graczy, eventy i ogłoszenia** od razu na pierwszej stronie
 - ✅ **Jak dołączyć** — trzy kroki z wersją gry i adresem
 
 ### 🛒 Sklep
 
 - ✅ **Kategorie i paczki** — rangi, monety, klucze, itemy, usługi; kafelki jak sloty w ekwipunku
-- ✅ **Koszyk** — zapisywany w przeglądarce, ilości, usuwanie, podsumowanie
-- ✅ **Kasa** — nick z walidacją (3–16 znaków, tylko znaki Minecrafta), zgoda na regulamin, podsumowanie
-- ✅ **Płatności Tebex** — karty, BLIK, przelewy, PayPal, Paysafecard; bramka zewnętrzna, my nie dotykamy danych karty
-- ✅ **Tryb DEMO** — bez kluczy Tebex cały proces można prze klikać symulowaną płatnością
-- ✅ **Status zamówienia** — kroki *oczekuje → opłacone → dostarczone*, automatyczne odświeżanie
-- ✅ **Ceny liczone wyłącznie po stronie serwera** — klient wysyła tylko id paczki i ilość
+- ✅ **Koszyk** — zapisywany w przeglądarce, zmiana ilości, podsumowanie
+- ✅ **Kasa** — walidacja nicku Minecrafta (3–16 znaków), zgoda na regulamin, podsumowanie
+- ✅ **Płatności** — karty, BLIK, przelewy, PayPal, Paysafecard przez zewnętrzną bramkę
+- ✅ **Status zamówienia** — kroki *oczekuje → opłacone → dostarczone*, same się odświeżają
+- ✅ **Dostawa automatyczna** — po zaksięgowaniu płatności ranga lub item lecą na serwer bez udziału administracji
 
 ### 📊 Statystyki i eventy
 
@@ -65,44 +61,39 @@ Wszystko, co gracz musi zobaczyć w 3 sekundy: adres serwera, licznik graczy i d
 - ✅ **Wyszukiwarka gracza** — pełne statystyki po nicku (K/D, monety, zbite bloki)
 - ✅ **Eventy z odliczaniem** — turnieje, dropy, konkursy; status *trwa / zaplanowany / zakończony*
 
-### 🎥 Wykrywanie streamów
+### 🎥 Streamy z serwera
 
 - ✅ **Baner „TRWA STREAM"** — pojawia się sam, gdy ktoś streamuje serwer
-- ✅ **Osadzony player Twitcha** — z tytułem, liczbą widzów i linkiem do kanału
-- ✅ **Dwa źródła** — zlinkowani streamerzy (nick MC ↔ kanał) albo skan kategorii Minecraft po IP/nazwie serwera
-- ✅ **Bez kluczy Twitcha** działa na danych pokazowych, żeby strona wyglądała kompletnie
+- ✅ **Osadzony player** — tytuł, liczba widzów, link do kanału
+- ✅ **Wykrywanie na dwa sposoby** — po zlinkowanych nickach (gracz ↔ kanał) albo po tytule transmisji zawierającym IP serwera
 
-### 🎧 LiveHelp i panel
+### 🎧 Pomoc i panel
 
-- ✅ **Widget pomocy** — zgłoszenie z nickiem, tematem i opisem, bez logowania
-- ✅ **Panel administracyjny** `/panel` — odpowiedzi na zgłoszenia, zamówienia, kolejka komend do serwera
-- ✅ **Statystyki w panelu** — otwarte zgłoszenia, zamówienia, przychód z opłaconych
-- ✅ **Dostęp** — hasło + podpisane ciasteczko HMAC (httpOnly, sameSite)
+- ✅ **LiveHelp** — widget w rogu ekranu, zgłoszenie bez logowania
+- ✅ **Panel administracyjny** — odpowiedzi na zgłoszenia, zamówienia, kolejka komend, przychód
+- ✅ **Dostęp chroniony hasłem** i podpisanym ciasteczkiem
 
 ---
 
 ## 🔌 Integracje
 
-### 🧩 Plugin Minecraft (Paper / Spigot)
+### 🧩 Serwer Minecraft (Paper / Spigot)
 
-Protokół HTTP — wejścia gotowe, wtyczka to osobny etap.
+- ✅ **Serwer → strona** — czat, wejścia/wyjścia, zgony, osiągnięcia, gracze online, TPS, wersja, eventy
+- ✅ **Strona → serwer** — komendy do wykonania (np. nadanie rangi za zakup) i wiadomości ze strony na czat w grze
+- ✅ **Potwierdzenie wykonania** — zamówienie samo przechodzi na status *zrealizowane*
+- ✅ **Komunikacja po HTTP z tokenem** — żadnych zewnętrznych zależności po stronie Javy
 
-- ✅ **Serwer → strona**: `POST /api/ingest` — czat, wejścia/wyjścia, zgony, osiągnięcia, gracze online, TPS, wersja, eventy
-- ✅ **Strona → serwer**: `GET /api/plugin/commands` — komendy do wykonania (np. nadanie rangi za zakup) oraz wiadomości ze strony na czat
-- ✅ **Potwierdzenie**: `POST /api/plugin/commands` — po wykonaniu zamówienie samo dostaje status *zrealizowane*
-- ✅ **Token** w nagłówku, porównywany w czasie stałym
+### 💳 Płatności
 
-### 💳 Płatności (Tebex)
+- ✅ Koszyk tworzony w bramce płatności → gracz dostaje bezpieczny link
+- ✅ **Webhook z weryfikacją podpisu HMAC-SHA256**
+- ✅ Zdarzenia: opłacone / odrzucone / zwrócone
+- ✅ Komendy z paczki lecą na serwer z podstawionym nickiem (`{nick}`, `{quantity}`, `{package}`)
 
-- ✅ Koszyk tworzony przez Tebex Headless API → klient dostaje link do bramki
-- ✅ **Webhook** `POST /api/webhooks/tebex` z weryfikacją podpisu **HMAC-SHA256**
-- ✅ Zdarzenia: `payment.completed`, `payment.declined`, `payment.refunded`
-- ✅ Po opłaceniu: komendy z paczki lecą do kolejki z podstawionym nickiem (`{nick}`, `{quantity}`, `{package}`)
+### 🤖 Discord
 
-### 🤖 Discord i Twitch
-
-- ✅ **Twitch Helix** — token aplikacji z cache'm, cache streamów 60 s
-- ⏳ **Bot Discord** — zaprojektowany (`/status`, `/gracz`, powiadomienia o zakupach i streamach), do implementacji w `services/bot`
+- ⏳ **Bot w przygotowaniu** — status serwera, statystyki gracza, powiadomienia o zakupach i streamach
 
 ---
 
@@ -111,17 +102,17 @@ Protokół HTTP — wejścia gotowe, wtyczka to osobny etap.
 Celowo **nie** jest to „AI landing page". Zasady zapisane w `apps/web/src/app/globals.css`:
 
 - 🟩 **Wszystko kwadratowe** — `border-radius: 0` wymuszone globalnie
-- 🔤 **Fonty pikselowe serwowane lokalnie** (Press Start 2P + Pixelify Sans przez `@fontsource`) — bez pytań do Google Fonts, szybciej i bez problemów z RODO
+- 🔤 **Fonty pikselowe serwowane lokalnie** — bez pytań do Google Fonts, szybciej i bez problemów z RODO
 - 🧱 **Panele jak okno inventory** — ostra ramka, światło od góry, cień od dołu
-- 🔘 **Wciskane przyciski** — efekt 3D jak w menu gry, animacje „klatkowe" (`steps()`), nie miękkie
-- ⛏ **Własne ikony SVG** zamiast emoji — spójne na każdym systemie
-- 🖼️ **Social preview** generowane automatycznie (`opengraph-image.tsx`) + favikona — blok trawy
+- 🔘 **Wciskane przyciski** — efekt 3D jak w menu gry, animacje klatkowe zamiast miękkich przejść
+- ⛏ **Własne ikony SVG** zamiast emoji — identyczne na każdym systemie
+- 🖼️ **Social preview generowane automatycznie** — po wklejeniu linku na Discordzie czy X wyświetla się grafika z nazwą i IP serwera
 
 ---
 
 ## 📸 Screenshots
 
-Zdjęcia wrzuć do folderu `screenshots/` pod nazwami poniżej.
+Zdjęcia leżą w folderze `screenshots/`.
 
 ### 🏠 Strona główna
 
@@ -139,13 +130,13 @@ Kafelki paczek jak sloty w ekwipunku, kategorie, odznaki (Bestseller / Promocja 
 
 <img src="screenshots/sklep.png" alt="Sklep" width="800">
 
-*Sklep — ceny liczone po stronie serwera, koszyk w przeglądarce*
+*Sklep — ceny liczone po stronie serwera, koszyk zapisywany w przeglądarce*
 
 <br><br>
 
 ### 🧾 Koszyk i płatność
 
-Podsumowanie, nick gracza, zgoda na regulamin i przejście do bramki (albo symulowana płatność w trybie DEMO).
+Podsumowanie, nick gracza, zgoda na regulamin i przejście do bramki płatności.
 
 <img src="screenshots/koszyk.png" alt="Koszyk" width="800">
 
@@ -155,11 +146,11 @@ Podsumowanie, nick gracza, zgoda na regulamin i przejście do bramki (albo symul
 
 ### 📦 Status zamówienia
 
-Kroki *oczekuje → opłacone → dostarczone* z automatycznym odświeżaniem i podglądem komend, które poszły na serwer.
+Kroki *oczekuje → opłacone → dostarczone* z automatycznym odświeżaniem.
 
 <img src="screenshots/zamowienie.png" alt="Status zamówienia" width="800">
 
-*Zamówienie — po wykonaniu komend przez plugin status zmienia się na „zrealizowane"*
+*Zamówienie — po wykonaniu komend na serwerze status zmienia się na „zrealizowane"*
 
 <br><br>
 
@@ -175,7 +166,7 @@ Ranking z sortowaniem, podium i wyszukiwarką gracza.
 
 ### 🛠️ Panel administracyjny
 
-Zgłoszenia LiveHelp z odpowiedziami, zamówienia i kolejka komend do wykonania na serwerze.
+Zgłoszenia pomocy z odpowiedziami, zamówienia i kolejka komend do wykonania na serwerze.
 
 <img src="screenshots/panel.png" alt="Panel administracyjny" width="800">
 
@@ -200,90 +191,28 @@ Baner „TRWA STREAM" z osadzonym playerem — pojawia się sam po wykryciu tran
 | Warstwa | Technologia |
 |---|---|
 | Frontend | **Next.js 15** (App Router), **React 19**, **TypeScript** |
-| Style | **Tailwind CSS v4** (własny design system: `mc-panel`, `mc-btn`, `mc-slot`) |
-| Baza | **Drizzle ORM** + **SQLite** (produkcja: **Postgres** — zmiana 3 linii) |
-| Dane na żywo | **SSE** (`/api/realtime`) + event bus w pamięci |
-| Płatności | **Tebex** (Headless API + webhook HMAC) |
+| Style | **Tailwind CSS v4** + własny design system (`mc-panel`, `mc-btn`, `mc-slot`) |
+| Baza | **Drizzle ORM** + **SQLite** (pod produkcję: **Postgres** — zmiana 3 linii) |
+| Dane na żywo | **SSE** (`/api/realtime`) + event bus |
+| Płatności | bramka zewnętrzna + webhook HMAC |
 | Streamy | **Twitch Helix API** |
-| Walidacja | **Zod** |
-| Hosting | **Fly.io** (Docker + wolumen pod SQLite) |
-| Jakość | `tsc --noEmit`, `next build`, rate limiting, stałoczasowe porównania tokenów |
-
----
-
-## 🚀 Uruchomienie
-
-```bash
-git clone <repo> && cd mc
-cp .env.example apps/web/.env
-
-npm install
-npm run db:migrate     # tworzy bazę SQLite
-npm run db:seed        # paczki, gracze, eventy, przykładowe zamówienia
-npm run dev            # http://localhost:3000
-```
-
-Panel: `/panel` (hasło z `ADMIN_PASSWORD`, domyślnie `admin123`).
-
-> `node_modules` i plik bazy nie są w repozytorium — po klonie odpal trzy komendy wyżej.
-> Jeśli `better-sqlite3` nie chce się zainstalować: `npm_config_nodedir=/usr/local npm install`
-
-### Skrypty
-
-| Komenda | Po co |
-|---|---|
-| `npm run dev` | serwer deweloperski |
-| `npm run build` / `start` | build produkcyjny |
-| `npm run db:generate` | nowa migracja po zmianie schematu |
-| `npm run db:migrate` / `db:seed` / `db:reset` | baza |
-| `npm run typecheck` | sprawdzenie typów |
-
----
-
-## ☁️ Wdrożenie (fly.io)
-
-```bash
-fly volumes create mc_data --region waw --size 1   # PRZED pierwszym deployem
-fly secrets set ADMIN_PASSWORD="..." SESSION_SECRET="..." NEXT_PUBLIC_SITE_URL="https://xxx.fly.dev"
-fly deploy --build-arg NEXT_PUBLIC_SERVER_NAME="CraftMC" --build-arg NEXT_PUBLIC_SERVER_IP="mc.twojserwer.pl"
-fly ssh console -C "cd /app/apps/web && npm run db:seed"
-```
-
-⚠️ Fly czyści dysk przy restarcie maszyny — **baza musi leżeć na wolumenie** (`/data`).
-Zmienne `NEXT_PUBLIC_*` są wpinane w kod przy buildzie, więc idą jako **build-argi**, nie sekrety.
-
-Szczegóły: [docs/DEPLOY.md](docs/DEPLOY.md)
-
----
-
-## 📁 Struktura
-
-```
-apps/web/          Next.js — strona, sklep, API
-  src/app/         strony + endpointy API
-  src/components/  UI (karta serwera, czat, koszyk, LiveHelp, panel)
-  src/db/          schemat Drizzle, migracje, seed
-  src/lib/         integracje: tebex, twitch, orders, realtime, session
-packages/core/     współdzielone typy i narzędzia (cenzura nicków, formatowanie)
-docs/              ARCHITECTURE · INTEGRATIONS · DEPLOY · CHECKLIST
-```
+| Hosting | **Fly.io** (Docker + wolumen pod bazę) |
 
 ---
 
 ## 🔒 Bezpieczeństwo
 
+- 🔐 Płatności idą przez **zewnętrzną bramkę** — strona nie ma dostępu do danych karty
 - 🔐 Ceny wyliczane **wyłącznie po stronie serwera**
-- 🔐 Rate limiting na checkout, czat, LiveHelp i logowanie do panelu
-- 🔐 Podpis HMAC na webhooku Tebex, token pluginu porównywany w czasie stałym
-- 🔐 Hasło panelu w czasie stałym + ciasteczko httpOnly / sameSite
-- 🔐 Adresy IP haszowane przed zapisem
-- 🔐 Nicki w publicznym feedzie zakupów **maskowane serwerowo** (tryby: `partial` / `first` / `full` / `off`)
+- 🔐 Nicki w publicznym feedzie zakupów **maskowane** (tryby: częściowy / pełny / wyłączony)
+- 🔐 Ochrona przed spamem na czacie, w koszyku, pomocy i logowaniu
+- 🔐 Panel i webhooki chronione hasłem oraz podpisem kryptograficznym
 
 ---
 
-## 📄 Licencja
-
 <div align="center">
+
+## 📄 Licencja
 
 **MIT** — możesz używać, modyfikować i sprzedawać.
 
@@ -291,15 +220,11 @@ Copyright (c) 2026 WilkorPLYT (𝓓𝓻𝓦𝓲𝓵𝓴𝓸𝓻)
 
 Pełny tekst: [LICENSE](LICENSE)
 
-</div>
-
 <br>
 
 ---
 
 ## 👨‍💻 Autor
-
-<div align="center">
 
 | Developer | Discord | GitHub |
 |-----------|---------|--------|
@@ -319,5 +244,9 @@ Stworzony z ❤️ przez **𝓓𝓻𝓦𝓲𝓵𝓴𝓸𝓻**
 ---
 
 **⭐ Jeśli podoba Ci się ten projekt, zostaw gwiazdkę! ⭐**
+
+<br>
+
+<sub>Dokumentacja techniczna (uruchomienie, wdrożenie, architektura, kontrakty API): katalog `docs/`</sub>
 
 </div>
